@@ -1,6 +1,6 @@
 # 🚀 Salman Farsi - Interactive Portfolio
 
-![Portfolio Banner](images/preview.png)
+![Portfolio Banner](images/Preview.png)
 A highly interactive, responsive, and visually engaging personal portfolio website built with **HTML, CSS, JavaScript, and Three.js**. 
 
 This project showcases advanced front-end techniques including 3D backgrounds, complex CSS animations, glassmorphism, and dynamic theme switching.
