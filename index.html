@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman | Portfolio</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22Arial%22 font-weight=%22bold%22 fill=%22%23b30000%22>S</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <div id="loader">
+        <div class="cat-wrapper">
+            <div class="cat">
+                <div class="ears">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                </div>
+                <div class="face">
+                    <div class="eyes">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                    </div>
+                    <div class="cheeks">
+                        <div class="cheek left"></div>
+                        <div class="cheek right"></div>
+                    </div>
+                    <div class="muzzle"></div>
+                </div>
+                <div class="body-cat"></div>
+                <div class="paws">
+                    <div class="paw left"></div>
+                    <div class="paw right"></div>
+                </div>
+                <div class="tail"></div>
+            </div>
+            <div class="laptop-base">
+                <div class="keyboard">
+                    <div class="key key-l"></div>
+                    <div class="key key-r"></div>
+                </div>
+            </div>
+        </div>
+        <div class="loader-text">
+            <span>Welcome to my Portfolio...</span>
+        </div>
+    </div>
+    <div id="scene-container"></div>
+    <div id="vignette"></div>
+
+    <nav class="navbar">
+        <div class="logo-nav">
+            Salman<span>.</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://github.com/salmansync" target="_blank" class="btn-repo">
+                Visit Repo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <button id="theme-toggle" class="btn-theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <i class="fas fa-bars mobile-menu-btn" onclick="toggleMobileMenu()"></i>
+        </div>
+    </nav>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h3>Web Developer</h3>
+                <h1>Envisioning <br>tomorrow’s world: <br> <span id="name-cycle"></span><br>visionary journey.</h1>
+
+                <p id="typing-text">I’m a passionate Computer Science student specializing in <br>Software and Web Development, UI/UX Design, Animation, and <br>Graphic Design. Check out my projects and skills.</p>
+
+                <div class="card">
+                    <a href="#contact" class="batman-btn"> <span>SAY HELLO!</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user (2).png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently pursuing a diploma in computer science and technology.
+                    <br> I focus more on programming & learning. <br> • I’m currently working on exciting projects in software development. <br> • I’m continuously learning Python, Java, Web Development, and AI. <br> • Passionate about problem-solving, full-stack development, and open source.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br />HTML, CSS, JavaScript, React</li>
+                            <li><span>Backend</span><br />Node.js, Express</li>
+                            <li><span>Programming</span><br />Python, Java</li>
+                            <li><span>Design</span><br />UI/UX, Figma, Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026 - 2027</span><br>Internship at Govt. Graphic Arts Institute</li>
+                            <li><span>2025</span><br>IT Support Service, Level-3 NSDA</li>
+                            <li><span>2025</span><br>Web Design, Level-3 NSDA </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Ongoing</span><br />Self-learning Python, Java, Web Development & AI</li>
+                            <li><span>2023</span><br>Web app Development Course From Youtube</li>
+                            <li><span>2023-2026</span><br>Diploma in Computer Science & Technology From Govt. Graphic Arts Institute</li>
+                            <li><span>2022</span><br>SSC in Science From Nandina Govt. Pilot High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create modern, responsive, and visually appealing websites that deliver seamless user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and engaging user interfaces that enhance customer satisfaction and usability.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I develop high-quality, secure, and scalable mobile applications for both Android and iOS platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work-card">
+                    <div class="work-img">
+                        <img src="images/work-1.png" alt="Portfolio Website Project">
+                        <div class="work-icons">
+                            <a href="https://github.com/salmansync/Portfolio-Website"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-details">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern personal portfolio with responsive design.</p>
+                        <div class="tags"><span>#html</span><span>#css</span><span>#js</span></div>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-img">
+                        <img src="images/work-2.png" alt="Calculator App Project">
+                        <div class="work-icons">
+                            <a href="https://github.com/salmansync/CustomTkinter_Calculator_All"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-details">
+                        <h3>Calculator App</h3>
+                        <p>CustomTkinter based advanced calculator project.</p>
+                        <div class="tags"><span>#python</span><span>#gui</span></div>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-img">
+                        <img src="images/work-3.png" alt="Agency Website Project">
+                        <div class="work-icons">
+                            <a href="https://github.com/salmansync/Agency_Website"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-details">
+                        <h3>Agency Website</h3>
+                        <p>Group project with multiple portfolios combined in one site.</p>
+                        <div class="tags"><span>#react</span><span>#node</span></div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/salmansync" class="btn"><span>See more</span></a>
+        </div>
+    </div>
+
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates & Achievements</h1>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="pdf-container">
+                        <div class="pdf-blocker"></div>
+                        <embed src="images/Certificate1 (1).pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-title">
+                            <h3>Champion </h3>
+                        </div>
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="pdf-container">
+                        <div class="pdf-blocker"></div>
+                        <embed src="images/Certificate1 (2).pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-title">
+                            <h3>Participation </h3>
+                        </div>
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> salmansync.now@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> +8801609330596</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/salmansync"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/salmansync"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/@sunixzo"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/salmansync"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2"><span>Download CV</span></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"><span>Submit</span></button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©Md. Salman Farsi. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
